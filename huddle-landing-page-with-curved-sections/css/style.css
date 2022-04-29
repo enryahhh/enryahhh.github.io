@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Poppins:wght@500;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+    font-family: 'Open Sans',sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.btn{
+    text-decoration: none;
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    padding: 0.2rem 0.7rem;
+    text-align: center;
+}
+
+.btn-primary{
+    width: 35%;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    padding: 0.6rem 1rem;
+}
+
+.btn.btn-rounded{
+    border-radius: 25px;
+}
+
+.nav{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .nav li{
+    display: inline-block;
+} */
+
+.nav .btn-nav{
+    display: inline-block;
+    font-size: 12px;
+    width: 90px;
+
+}
+
+.nav .btn-nav:hover{
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+}
+
+.logo img{
+    width: 55%;
+}
+
+.jumbotron{
+    display: flex;
+    flex-direction: column;
+    /* width: 50%; */
+    text-align: center;
+    margin: 6rem auto 2rem;
+    padding: 0 1rem;
+}
+
+.jumbotron-header-text{
+    font-size:30px;
+    font-weight: 600;
+}
+
+.jumbotron-capt{
+    /* width: 75%; */
+    line-height: 1.5;
+    margin: 1rem auto;
+}
+
+.btn.btn-rounded.btn-jumbotron{
+    margin: 1.5rem auto;
+    width: 80%;
+    padding: 15px;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    box-shadow: 1px 5px 6px #c1b6b6;
+}
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+main section{
+    margin: 90px 0;
+}
+
+.img-mockup{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.img-mockup img{
+    width: 60%;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.services{
+    margin: 60px 0;
+}
+
+.services .flex-container{
+    height: 600px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services .flex-container .flex-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services .flex-container .flex-item h1{
+    font-size: 80px;
+    margin: 0.2rem 0;
+    font-weight: 600;
+}
+
+.services .flex-container .flex-item h4{
+    font-size: 16px;
+    color: grey;
+    font-weight: 100;
+}
+
+.services .flex-container .flex-item img{
+    margin: 1rem 0;
+    width: 15%;
+}
+
+.wave-top,.wave-bottom{
+    height: 6rem;
+    background-size: 100%;
+}
+
+#grow .wave-top{
+    background-image: url('../images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    
+}
+
+#grow .wave-bottom{
+    background-image: url('../images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    
+    
+}
+
+.content-section{
+    height: 550px;
+    text-align: center;
+}
+
+.content-section h1{
+    font-size: 20px;
+    margin: 5rem 0 1rem;
+}
+
+
+.content-section p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.content-section img{
+    width: 60%;
+}
+.content-text{
+    margin: 0 2rem;
+}
+
+#grow .content-section img{
+    margin-top: 4rem;
+}
+
+#grow .content-section,#users .content-section{
+    background-color: #F6FBFF;
+    
+}
+
+#users .wave-top{
+    background-image: url('../images/bg-section-top-mobile-2.svg');
+    
+    background-repeat: no-repeat;
+}
+
+#users .wave-bottom{
+    width: 100%;
+    height: 100px;
+    background-image: url('../images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+    
+}
+
+#community{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin:150px 0;
+}
+
+#community h1{
+    font-size: 28px;
+}
+footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-content{
+    background-color: hsl(192, 100%, 9%);
+    padding: 20px 24px;
+}
+
+footer .footer-content p{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+footer .wave-top{
+    height: 4rem;
+    background-image: url('../images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer #newsletter h1{
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* #newsletter{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+} */
+
+/* #newsletter p{
+    font-size: 14px;
+    margin: 10px 0px;
+} */
+
+#subscribe{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 3rem;
+}
+#subscribe input{
+    padding: 0.7rem;
+}
+
+#subscribe a{
+    margin: 0.5rem 0;
+    align-self: flex-end;
+}
+
+#subscribe input,a{
+    border-radius: 5px;
+}
+
+#logo2{
+    width: 70%;
+}
+
+#contact{
+    margin-bottom: 3rem;
+}
+
+.contact-footer img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.contact-footer{
+    display: flex;
+    align-items: center;
+}
+
+.attribution{
+    font-size: 14px;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+}
+
+.attribution a{
+    color: hsl(322, 100%, 66%);
+    text-decoration: none;
+}
+
+/* @media (min-width:576px) {
+    footer .wave-top{
+        height: 4rem;
+    }
+} */
+
+@media only screen and (min-width: 768px) {
+    .jumbotron-capt {
+        text-align: center;
+        width: 60%;
+    }
+
+    .btn.btn-rounded.btn-jumbotron{
+        width: 30%;
+    }
+
+    .services .flex-container{
+        flex-direction: row;
+    }
+
+    .content-section{
+        display: flex;
+    }
+
+    #grow .wave-top{
+        display: none;
+    }
+
+    .wave-top,.wave-bottom{
+        height: 165px;
+    }
+
+    #grow::before{
+        content: "";
+        display: block;
+        background-image: url('../images/bg-section-top-desktop-1.svg');
+        height: 165px;
+    }
+
+    #grow .wave-bottom{
+        background-image: url('../images/bg-section-bottom-desktop-1.svg');
+    }
+
+    #users .wave-top{
+        background-image: url('../images/bg-section-top-desktop-2.svg');
+    }
+
+    #users .wave-bottom{
+        background-image: url('../images/bg-section-bottom-desktop-2.svg');
+    }
+
+    #users .content-section img,#grow .content-section img{
+        order: 1;
+    }
+
+    #users .wave-top{
+        height: 75px !important;
+    }
+
+    .content-section{
+        text-align: left;
+        align-items: center;
+    }
+
+    .content-section img{
+        max-width: 100%;
+        height: 60%;
+        margin: 3rem;
+    }
+
+
+    footer .footer-content{
+        display: flex;
+        padding: 50px;
+    }
+
+    #newsletter{
+        order: 1;
+    }
+
+    #contacts p{
+        width: 60%;
+    }
+
+    #subscribe{
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #subscribe input{
+        width: 60%;
+        height: 43px;
+        margin-top: 0.5rem;
+    }
+
+    footer .wave-top{
+        background-image: url('../images/bg-footer-top-desktop.svg');
+        background-repeat: no-repeat;
+        height: 95px;
+    }
+}
+
+@media (min-width:992px){
+    
+
+    .wave-top,.wave-bottom{
+        /* height: 11rem; */
+    }
+    /* #grow .wave-top{
+        background-image: url('../images/bg-section-top-desktop-1.svg');
+        background-repeat: no-repeat;
+    } */
+
+    
+    
+    #logo2{
+        width:30%;
+    }
+
+    footer .wave-top{
+        height: 7rem;
+    }
+
+   
+
+    .services .flex-container{
+        align-items: center;
+        height: 300px;
+    }
+
+    
+
+    .content-section h1{
+        font-size: 35px;
+        margin: 0px;
+    }
+
+    .content-text p{
+        /* width: 600px; */
+    }
+
+}
+
+@media only screen and (min-width: 1200px){
+    footer .wave-top{
+        height: 9rem;
+    }
+}
