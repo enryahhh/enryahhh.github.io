@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Raleway:wght@400;700&display=swap');
+
+:root{
+    --primary-color1: hsl(243, 87%, 12%);
+    --primary-color2: hsl(238, 22%, 44%);
+    --accent-color1: hsl(224, 93%, 58%);
+    --accent-color2: hsl(170, 45%, 43%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+
+#app{
+    
+    display: grid;
+    grid-template-areas: "header header"
+                         "jmbtrn jmbtrn"
+                         "content content"
+                         "subs subs"
+                         "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.7fr  1fr 0.5fr ;
+}
+
+header{
+    grid-area: header;
+    margin: 24px;
+    /* padding: 10px 0; */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+
+.brand{
+    /* margin-left: 20px; */
+}
+
+.logo{
+    display: block;
+}
+
+nav .menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px, 1fr));
+    
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    
+}
+
+.menu li a{
+    color: #000;
+    text-decoration: none;
+}
+
+#jumbotron,#content,#subscription{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    padding:20px;
+}
+
+.item-text{
+    /* background-color: #ffa; */
+    margin: 10px 70px 10px 0;
+    padding-right: 3.5em;
+    text-align: left;
+}
+
+.item-text h2{
+    font-family: Raleway;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.item-text p{
+    margin: 1rem 0;
+}
+
+#jumbotron{
+    grid-area: jmbtrn;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+ .cta input{
+    width: 50%;
+    padding: 10px;
+}
+
+.cta button{
+    color: white;
+    font-family: Raleway;
+    font-weight: 700;
+    width: 30%;
+    padding: 12px;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #888;
+}
+
+.cta button:hover{
+    cursor: pointer;
+    background-color: hsl(224, 93%, 58%,0.8);
+}
+
+.item-img img{
+    display: block;
+    width: 80%;
+}
+
+
+#jumbotron .item-text{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#content{
+    padding: 0;
+    grid-area: content;
+    grid-template-rows: 100px 1.5fr;
+}
+
+
+.wave{
+    background-image: url('../images/bg-curve-desktop.svg');
+    height: 100px;
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+    background-repeat: no-repeat;
+}
+
+.isi{
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 / 3;
+    background-color: #F8F8FE;
+}
+
+#guide{
+    display: block;
+    margin: 1rem 0;
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    padding-bottom: 5px;
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    width: max-content;
+}
+
+.quotes{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 75%;
+  padding: 30px;
+}
+
+.quotes p{
+    font-size: 1em;
+}
+
+
+.ceo{
+    display: flex;
+    align-items: center;
+}
+
+.owner{
+    margin-left: 10px;
+}
+
+.ceo .owner h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+
+.owner p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+.ceo img{
+    display: block;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* #content::before{
+    content: "";
+    height: 100px;
+    background-image: url('images/bg-curve-dekstop.svg');
+} */
+
+/* #content .item-text h2{
+    order: -1;
+} */
+
+#subscription{
+    grid-area: subs;
+    background-color: var(--primary-color2);
+    color: white;
+    padding: 4rem;
+}
+
+#subscription .item-text p{
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#subscription .item .cta{
+    display: flex;
+    flex-direction: column;
+}
+
+#subscription .item .cta input{
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+#subscription .item .cta button{
+    box-shadow: 2px 2px 5px rgb(47, 44, 44);
+}
+
+footer{
+    grid-area: footer;
+    background-color: var(--primary-color1);
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    gap: 1rem;
+}
+
+.contact1{
+    display: grid;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.kotak{
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.socmed{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.contact img{
+    display: block;
+    width: 60%;
+}
+
+.contact a{
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.icon-cn{
+    margin-right: 10px;
+}
+
+@media (max-width:960px) {
+    .item-text{
+        padding: 0;
+    }
+    .item-text h2{
+        font-size: 18px;
+    }
+
+    .item-text p , #subscription .item-text p{
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .item-img img {
+        width: 100%;
+    }
+
+    .isi{
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    .quotes{
+        width: 100%;
+        text-align: left;
+    }
+
+    .cta{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #jumbotron .cta > * , .item .cta > *{
+        width: 100% !important;
+        margin: 0.9em 0;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    
+
+    .logo img{
+        display: block;
+        width: 70%;
+    }
+
+    nav{
+        grid-template-columns: 1fr 2fr;
+    }
+
+    nav .menu{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    nav .menu li a{
+        font-size: 14px;
+    }
+
+    .wave{
+        background-image: url('../images/bg-curve-mobile.svg');
+        background-size: contain;
+        height: 75px;
+    }
+
+    #jumbotron,#content,.isi,#subscription,footer{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    
+
+    #jumbotron .item-text h2{
+        font-size: 22px;
+    }
+
+    .isi{
+        margin-top: -1rem;
+    }
+
+    #guide{
+        margin: 1rem auto;
+    }
+
+    .item-img{
+        order: -1;
+    }
+
+    .item-img img{
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    .item-text{
+        margin: 0;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    #subscription{
+        padding: 2rem;
+    }
+
+    #subscription .item-text p{
+        text-align: center;
+    }
+
+    footer{
+        padding: 30px;
+        gap: 1rem;
+    }
+
+    footer .contact1{
+        gap: 1.5rem;
+    }
+    
+}
+
+/* @media (max-width:600px){
+
+} */
