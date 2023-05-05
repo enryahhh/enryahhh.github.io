@@ -309,6 +309,7 @@ html {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .hero {
+        top: -70px;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -321,6 +322,19 @@ html {
 
     .navbar-brand {
         font-size: 2rem;
+    }
+    .wrapper{
+      max-width: 100%;
+      justify-content: left;
+      padding-left: 2rem;
+    }
+    .wrapper .card{
+      width: calc(18% - 8px);
+      margin-bottom: 20px;
+    }
+
+    .circle-container{
+      bottom: 50px;
     }
 }
   
