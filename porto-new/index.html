@@ -1,322 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Website</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="fontawesome/css/all.min.css" rel="stylesheet"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="fontawesome/css/all.min.css" rel="stylesheet">
+  </link>
 </head>
+
 <body>
-    <!-- Header Section -->
-<!-- Header Section -->
-<header id="header" class="mb-5">
+  <!-- Header Section -->
+  <!-- Header Section -->
+  <header id="header" class="mb-5">
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#about-me">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+    
     <div class="hero text-center" data-aos="fade-down" data-aos-duration="2000">
-        <h1>Welcome to My Portfolio Website</h1>
-        <p>Here you can find my latest projects, skills and more</p>
-        <div class="circle-container">
-            <a href="#about-me" class="circle-link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-arrow-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-                  </svg>
-            </a>
-        </div>
+      <h1>Welcome to My Portfolio Website</h1>
+      <p>Here you can find my latest projects, skills and more</p>
+      <div class="circle-container">
+        <a href="#about-me" class="circle-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-arrow-down"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+          </svg>
+        </a>
+      </div>
     </div>
-</header>
+  </header>
 
 
+  <main>
     <!-- About Me Section -->
     <section id="about-me" class="mb-5 pt-5">
-        <div class="container">
-          <h2 class="title-section">About Me</h2>
-          <div class="row mt-3">
-            <div class="col-md-4">
-              <img src="img/pp.jpeg" alt="Portrait" class="img-fluid rounded-circle shadow-lg" data-aos="fade-right">
-            </div>
-            <div class="col-md-6 offset-1" data-aos="fade-left">
-              <h3>Lingga Juliansyah</h3>
-              <p>Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di Universitas Komputer Indonesia. Saya sangat tertarik di dunia programming, dan sekarang sedang mencoba menjadi seorang Fullstack Developer.
+      <div class="container">
+        <h2 class="title-section mb-3">About Me</h2>
+        <div class="row mt-3">
+          <div class="col-9 col-md-4 my-5 offset-1">
+            <img src="img/pp.jpeg" alt="Portrait" class="img-fluid rounded-circle shadow-lg" data-aos="fade-right">
+          </div>
+          <div class="col-12 col-md-6 offset-md-1" data-aos="fade-left">
+            <h3>Lingga Juliansyah</h3>
+            <p>Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di Universitas Komputer Indonesia. Saya
+              sangat tertarik di dunia programming, dan sekarang sedang mencoba menjadi seorang Fullstack Developer.
             </p>
-              <div class="social-icons">
-                <a href="https://medium.com/@linggaj28"><i class="fab fa-medium"></i></a>
-                <a href="https://github.com/enryahhh"><i class="fab fa-github"></i></a>
-                <a href="https://instagram.com/lingjul_05"><i class="fab fa-instagram"></i></a>
-              </div>
+            <div class="social-icons">
+              <a href="https://medium.com/@linggaj28"><i class="fab fa-medium"></i></a>
+              <a href="https://github.com/enryahhh"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/lingjul_05"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
         </div>
-      </section>
-      
-  
-      
+      </div>
+    </section>
+
+
+
     <!-- Skills Section -->
     <section id="skills">
-        <div class="container">
-          <h2 class="title-section">Skills</h2>
-          <div class="wrapper">
-            <div class="card" data-aos="flip-left">
-              <div class="circle">
-                <div class="bar"></div>
-                <div class="box"><span></span></div>
-              </div>
-              <div class="text">HTML & CSS</div>
+      <div class="container">
+        <h2 class="title-section">Skills</h2>
+        <div class="wrapper">
+          <div class="card">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
             </div>
-            <div class="card js" data-aos="flip-left">
-              <div class="circle">
-                <div class="bar"></div>
-                <div class="box"><span></span></div>
-              </div>
-              <div class="text">JavaScript</div>
-            </div>
-            
-               <div class="card node" data-aos="flip-left">
-              <div class="circle">
-                <div class="bar"></div>
-                <div class="box"><span></span></div>
-              </div>
-              <div class="text">NodeJs</div>
-            </div>
-            
-            <div class="card vue" data-aos="flip-left">
-              <div class="circle">
-                <div class="bar"></div>
-                <div class="box"><span></span></div>
-              </div>
-              <div class="text">Vue JS</div>
-            </div>
-
-        <div class="card php" data-aos="flip-left">
-          <div class="circle">
-            <div class="bar"></div>
-            <div class="box"><span></span></div>
+            <div class="text">HTML & CSS</div>
           </div>
-          <div class="text">PHP</div>
-        </div>
 
-      <div class="card laravel" data-aos="flip-left">
-        <div class="circle">
-          <div class="bar"></div>
-          <div class="box"><span></span></div>
-        </div>
-        <div class="text">Laravel</div>
-      </div>
+          <div class="card js">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">JavaScript</div>
+          </div>
 
-    <div class="card mysql" data-aos="flip-left">
-      <div class="circle">
-        <div class="bar"></div>
-        <div class="box"><span></span></div>
+          <div class="card node">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">NodeJs</div>
+          </div>
+
+          <div class="card vue">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">Vue JS</div>
+          </div>
+
+          <div class="card php">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">PHP</div>
+          </div>
+
+          <div class="card laravel">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">Laravel</div>
+          </div>
+
+          <div class="card mysql">
+            <div class="circle">
+              <div class="bar"></div>
+              <div class="box"><span></span></div>
+            </div>
+            <div class="text">MySQL</div>
+          </div>
+        </div>
       </div>
-      <div class="text">MySQL</div>
-    </div>
-  </div>
-</div>
-</div>
-  </div>
-    </div>
-      </section>
-      
-      
-      
+    </section>
+
+
+
     <!-- Portfolio Section -->
     <section id="portfolio">
-        <div class="container my-5">
-            <h2 class="title-section my-5">Portfolio</h2>
-            <div class="owl-carousel owl-theme">
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in bibendum viverra. </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 2</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in bibendum viverra. </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card shadow">
-                        <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in bibendum viverra. </p>
-                            <a href="#" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                    <div class="card shadow">
-                      <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
-                      <div class="card-body">
-                          <h5 class="card-title">Project 3</h5>
-                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in bibendum viverra. </p>
-                          <a href="#" class="btn btn-primary">View Project</a>
-                      </div>
-                  </div>
+      <div class="container my-5">
+        <h2 class="title-section my-5">Portfolio</h2>
+        <div class="owl-carousel owl-theme">
+          <div class="card shadow">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in
+                bibendum viverra. </p>
+              <a href="#" class="btn btn-primary">View Project</a>
             </div>
+          </div>
+          <div class="card shadow">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in
+                bibendum viverra. </p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+          <div class="card shadow">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in
+                bibendum viverra. </p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+          <div class="card shadow">
+            <img src="https://via.placeholder.com/350x150" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet est in
+                bibendum viverra. </p>
+              <a href="#" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Contact Section -->
     <section id="contact" class="my-5">
-        <div class="container my-5">
-            <h2 class="title-section mb-5">Contact</h2>
-            <form>
-                <div class="row no-gutters">
-                    <div class="col-lg-5">
-                        <div class="form-group my-3">
-                            <label for="exampleFormControlInput1">Nama</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nama lengkap">
-                        </div>
-                    
-                        <div class="form-group my-3">
-                            <label for="exampleFormControlInput1">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-    
-                        <div class="form-group my-3">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-    
-                </div>
-                </form>
-        </div>
+      <div class="container my-5">
+        <h2 class="title-section mb-5">Contact</h2>
+        <form>
+          <div class="row no-gutters">
+            <div class="col-lg-5">
+              <div class="form-group my-3">
+                <label for="exampleFormControlInput1">Nama</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nama lengkap">
+              </div>
+
+              <div class="form-group my-3">
+                <label for="exampleFormControlInput1">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+
+              <div class="form-group my-3">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
     </section>
-    <!-- Footer Section -->
-    <footer>
-        <div class="container text-center">
-            <p>&copy; 2023 Lingga Juliansyah</p>
-        </div>
-    </footer>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
-    <script src="js/owlcarousel/owl.carousel.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script>
-AOS.init();
-let options = {
-        startAngle: -1.55,
-        size: 150,
-        value: 0.85,
-        fill: {gradient: ['#000', '#000']}
-      }
-      $(".circle .bar").circleProgress(options).on('circle-animation-progress',
-      function(event, progress, stepValue){
+  </main>
+  <!-- Footer Section -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2023 Lingga Juliansyah</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+    let options = {
+      startAngle: -1.55,
+      size: 150,
+      value: 0.85,
+      fill: { gradient: ['#000', '#000'] }
+    }
+    $(".circle .bar").circleProgress(options).on('circle-animation-progress',
+      function (event, progress, stepValue) {
         $(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
       });
-      $(".js .bar").circleProgress({
-        value: 0.80
-      });
-      $(".node .bar").circleProgress({
-        value: 0.75
-      });      
-	  $(".react .bar").circleProgress({
-        value: 0.60
-      });
-      $(".php .bar").circleProgress({
-        value: 0.80
-      });
-      $(".laravel .bar").circleProgress({
-        value: 0.75
-      });
-      $(".mysql .bar").circleProgress({
-        value: 0.80
-      });
-       window.addEventListener('scroll', function() {
-  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  var headerHeight = document.querySelector('header').offsetHeight-200;
-  var navbar = document.querySelector('.navbar');
-  if (scrollTop > headerHeight) {
-    navbar.classList.add('scrolled');
-    navbar.classList.remove('bg-transparent');
-  } else {
-    navbar.classList.remove('scrolled');
-    navbar.classList.add('bg-transparent');
-  }
-});
-
-
-const sections = document.querySelectorAll('section');
-sections.forEach(section => {
-  const title = section.querySelector('.title-section');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        title.classList.add('active');
+    $(".js .bar").circleProgress({
+      value: 0.80
+    });
+    $(".node .bar").circleProgress({
+      value: 0.75
+    });
+    $(".react .bar").circleProgress({
+      value: 0.60
+    });
+    $(".php .bar").circleProgress({
+      value: 0.80
+    });
+    $(".laravel .bar").circleProgress({
+      value: 0.75
+    });
+    $(".mysql .bar").circleProgress({
+      value: 0.80
+    });
+    window.addEventListener('scroll', function () {
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      var headerHeight = document.querySelector('header').offsetHeight - 200;
+      var navbar = document.querySelector('.navbar');
+      if (scrollTop > headerHeight) {
+        navbar.classList.add('scrolled');
+        navbar.classList.remove('bg-transparent');
       } else {
-        title.classList.remove('active');
+        navbar.classList.remove('scrolled');
+        navbar.classList.add('bg-transparent');
       }
     });
-  });
-  observer.observe(section);
-});
 
-$(window).scroll(function(){
-  var scroll = $(window).scrollTop();
-  $('.hero').css('background-position', 'center ' + (scroll/2) + 'px');
-});
 
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true,
-    responsiveClass:true,
-    margin:10,
-    responsive:{
-      0:{
-        items:1
-      },
-      600:{
-        items:2
-      },
-      1000:{
-        items:3
-      }
-    }
-})
-})
+    const sections = document.querySelectorAll('section');
+    sections.forEach(section => {
+      const title = section.querySelector('.title-section');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            title.classList.add('active');
+          } else {
+            title.classList.remove('active');
+          }
+        });
+      });
+      observer.observe(section);
+    });
 
-    </script>
-    </body>
-    </html>
-    
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      $('.hero').css('background-position', 'center ' + (scroll / 2) + 'px');
+    });
+
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        margin: 10,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>
